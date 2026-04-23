@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cream City Commons — Joseph Berg</title>
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    body { background: var(--white); }
+    .nav-toggle span { background: var(--black); }
+  </style>
+</head>
+<body>
+
+  <button class="nav-toggle dark" id="navToggle" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+
+  <div class="nav-drawer" id="navDrawer">
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="../portfolio.html">Portfolio</a>
+      <a href="../about.html">About</a>
+    </nav>
+    <div class="nav-footer">Joseph Berg &mdash; Architecture</div>
+  </div>
+
+  <div class="project-page">
+
+    <div class="project-nav">
+      <a href="../portfolio.html" class="back-link">Portfolio</a>
+    </div>
+
+    <div class="project-title-bar">
+      <h1>Cream City Commons</h1>
+      <!--
+        Write a short description of this project below.
+        Material palette, design intent, site context, structural approach, etc.
+      -->
+      <p class="project-subtitle">Replace this text with a brief description of the project — its context, goals, and design approach. 2–4 sentences works well here.</p>
+    </div>
+
+    <div class="project-body">
+
+      <!--
+        HOW TO ADD YOUR IMAGES:
+        1. Place your images in a folder: images/cream-city-commons/
+        2. Replace each placeholder div with an <img> tag, e.g.:
+              <img src="../images/cream-city-commons/image-01.jpg" alt="Description">
+        3. Add a caption below each image or image group using the .img-caption class.
+
+        LAYOUT OPTIONS:
+        - Two images side by side:  use .img-grid-2
+        - Full-width single image:  use .img-grid-1
+        - Mix and match as needed.
+
+        You have space for 10–40 images. Duplicate the section blocks below.
+      -->
+
+      <div class="project-section">
+        <div class="project-section-label">Images</div>
+
+        <div class="img-grid-2">
+          <div class="proj-img-placeholder">
+            <!-- <img src="../images/cream-city-commons/01.jpg" alt=""> -->
+            image 01
+          </div>
+          <div class="proj-img-placeholder">
+            <!-- <img src="../images/cream-city-commons/02.jpg" alt=""> -->
+            image 02
+          </div>
+        </div>
+        <p class="img-caption">Caption or explanation for the images above. Describe what is shown — drawing type, view, scale, design intent.</p>
+
+        <div class="img-grid-1">
+          <div class="proj-img-placeholder">
+            <!-- <img src="../images/cream-city-commons/03.jpg" alt=""> -->
+            image 03 — full width
+          </div>
+        </div>
+        <p class="img-caption">Caption for the full-width image.</p>
+
+        <div class="img-grid-2">
+          <div class="proj-img-placeholder tall">
+            <!-- <img src="../images/cream-city-commons/04.jpg" alt=""> -->
+            image 04
+          </div>
+          <div class="proj-img-placeholder tall">
+            <!-- <img src="../images/cream-city-commons/05.jpg" alt=""> -->
+            image 05
+          </div>
+        </div>
+        <p class="img-caption">Caption for these images.</p>
+
+        <!--
+          COPY AND PASTE the blocks above to add more images.
+          Aim for a rhythm that alternates between full-width and paired images.
+        -->
+
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    const toggle = document.getElementById('navToggle');
+    const drawer = document.getElementById('navDrawer');
+    toggle.addEventListener('click', () => {
+      toggle.classList.toggle('open');
+      drawer.classList.toggle('open');
+    });
+  </script>
+
+</body>
+</html>

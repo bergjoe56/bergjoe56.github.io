@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — Joseph Berg</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body { background: var(--white); }
+    .nav-toggle span { background: var(--black); }
+  </style>
+</head>
+<body>
+
+  <button class="nav-toggle dark" id="navToggle" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+
+  <div class="nav-drawer" id="navDrawer">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="about.html">About</a>
+    </nav>
+    <div class="nav-footer">Joseph Berg &mdash; Architecture</div>
+  </div>
+
+  <section id="about">
+
+    <div class="about-photo">
+      <!--
+        Replace the placeholder below with your actual photo:
+        <img src="images/joseph-berg.jpg" alt="Joseph Berg">
+
+        Remove the about-photo-placeholder div once you add the image.
+      -->
+      <div class="about-photo-placeholder">
+        <span>Your photo here</span>
+      </div>
+    </div>
+
+    <div class="about-content">
+      <div class="about-eyebrow">About</div>
+      <h1 class="about-name">Joseph<br>Berg</h1>
+      <div class="about-divider"></div>
+
+      <div class="about-bio">
+        <!--
+          Replace this with your actual bio.
+          Keep it focused: background, design philosophy, education, what drives your work.
+        -->
+        <p>Write a short paragraph about yourself here — your background, where you studied, and what drives your approach to architecture and design.</p>
+        <p>A second paragraph can speak to your design philosophy, the kinds of projects you're drawn to, or the questions that animate your practice.</p>
+      </div>
+
+      <div class="about-links">
+        <!--
+          Replace # with the actual path to your PDF files.
+          e.g. href="pdfs/joseph-berg-portfolio.pdf"
+        -->
+        <a href="pdfs/joseph-berg-portfolio.pdf" class="btn-dark" target="_blank">Portfolio PDF</a>
+        <a href="pdfs/joseph-berg-resume.pdf" class="btn-outline-dark" target="_blank">Resume PDF</a>
+      </div>
+    </div>
+
+  </section>
+
+  <script>
+    const toggle = document.getElementById('navToggle');
+    const drawer = document.getElementById('navDrawer');
+    toggle.addEventListener('click', () => {
+      toggle.classList.toggle('open');
+      drawer.classList.toggle('open');
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio — Joseph Berg</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body { background: var(--white); }
+    .nav-toggle span { background: var(--black); }
+  </style>
+</head>
+<body>
+
+  <button class="nav-toggle dark" id="navToggle" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+
+  <div class="nav-drawer" id="navDrawer">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="about.html">About</a>
+    </nav>
+    <div class="nav-footer">Joseph Berg &mdash; Architecture</div>
+  </div>
+
+  <section id="portfolio">
+    <div class="page-header">
+      <h1>Portfolio</h1>
+      <span>Selected works</span>
+    </div>
+
+    <div class="portfolio-grid">
+
+      <a href="projects/nexus-forum.html" class="project-thumb thumb-01">
+        <!--
+          Add your thumbnail image:
+          <img src="../images/nexus-forum-thumb.jpg" alt="Nexus Forum">
+        -->
+        <div class="thumb-info">
+          <div class="thumb-num">01</div>
+          <div class="thumb-name">Nexus Forum</div>
+        </div>
+      </a>
+
+      <a href="projects/muir-environmental.html" class="project-thumb thumb-02">
+        <!--
+          <img src="../images/muir-thumb.jpg" alt="Muir Environmental Learning Center">
+        -->
+        <div class="thumb-info">
+          <div class="thumb-num">02</div>
+          <div class="thumb-name">Muir Environmental Learning Center</div>
+        </div>
+      </a>
+
+      <a href="projects/cream-city-commons.html" class="project-thumb thumb-03">
+        <!--
+          <img src="../images/cream-city-thumb.jpg" alt="Cream City Commons">
+        -->
+        <div class="thumb-info">
+          <div class="thumb-num">03</div>
+          <div class="thumb-name">Cream City Commons</div>
+        </div>
+      </a>
+
+      <a href="projects/obscene-matters.html" class="project-thumb thumb-04">
+        <!--
+          <img src="../images/obscene-thumb.jpg" alt="Studio: Obscene Matters">
+        -->
+        <div class="thumb-info">
+          <div class="thumb-num">04</div>
+          <div class="thumb-name">Studio: Obscene Matters</div>
+        </div>
+      </a>
+
+      <a href="projects/miscellaneous.html" class="project-thumb thumb-05">
+        <!--
+          <img src="../images/misc-thumb.jpg" alt="Miscellaneous Works">
+        -->
+        <div class="thumb-info">
+          <div class="thumb-num">05</div>
+          <div class="thumb-name">Miscellaneous Works</div>
+        </div>
+      </a>
+
+      <a href="projects/professional.html" class="project-thumb thumb-06">
+        <!--
+          <img src="../images/professional-thumb.jpg" alt="Professional Work">
+        -->
+        <div class="thumb-info">
+          <div class="thumb-num">06</div>
+          <div class="thumb-name">Professional Work</div>
+        </div>
+      </a>
+
+      <a href="projects/paris.html" class="project-thumb thumb-07">
+        <!--
+          <img src="../images/paris-thumb.jpg" alt="Thinking With A Pencil: Paris">
+        -->
+        <div class="thumb-info">
+          <div class="thumb-num">07</div>
+          <div class="thumb-name">Thinking With A Pencil: Paris</div>
+        </div>
+      </a>
+
+      <a href="projects/amsterdam.html" class="project-thumb thumb-08">
+        <!--
+          <img src="../images/amsterdam-thumb.jpg" alt="Thinking With A Pencil: Amsterdam">
+        -->
+        <div class="thumb-info">
+          <div class="thumb-num">08</div>
+          <div class="thumb-name">Thinking With A Pencil: Amsterdam</div>
+        </div>
+      </a>
+
+      <a href="projects/british-isles.html" class="project-thumb thumb-09">
+        <!--
+          <img src="../images/british-isles-thumb.jpg" alt="Thinking With A Pencil: British Isles">
+        -->
+        <div class="thumb-info">
+          <div class="thumb-num">09</div>
+          <div class="thumb-name">Thinking With A Pencil: British Isles</div>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <script>
+    const toggle = document.getElementById('navToggle');
+    const drawer = document.getElementById('navDrawer');
+    toggle.addEventListener('click', () => {
+      toggle.classList.toggle('open');
+      drawer.classList.toggle('open');
+    });
+  </script>
+
+</body>
+</html>
