@@ -331,6 +331,12 @@ a { text-decoration: none; color: inherit; }
   padding: 0 10vw 80px;
 }
 
+.full-bleed {
+  width: 100vw;
+  margin-left: -10vw;
+  display: block;
+}
+
 .project-section {
   margin-bottom: 60px;
 }
