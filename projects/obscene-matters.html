@@ -103,9 +103,14 @@
   </div>
 
 </div>
+  <button class="back-to-top" id="backToTop">&#8593; Back to top</button>
   </div>
 
   <script>
+    document.getElementById('backToTop').addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
     const toggle = document.getElementById('navToggle');
     const drawer = document.getElementById('navDrawer');
     toggle.addEventListener('click', () => {
