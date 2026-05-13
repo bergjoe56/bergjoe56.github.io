@@ -5,6 +5,7 @@
 :root {
   --black: #0e0e0e;
   --white: #f5f3ef;
+  --pure-white: #ffffff;
   --mid: #9a9690;
   --light: #e8e5e0;
   --blue: #001AE6;
@@ -23,7 +24,7 @@ body {
 }
 
 .port-page, .project-page {
-  background: var(--white);
+  background: var(--pure-white);
   color: var(--black);
 }
 
