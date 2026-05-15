@@ -696,12 +696,44 @@ a { text-decoration: none; color: inherit; }
 .btn-outline-dark:hover { background: rgba(0,26,230,0.08); }
 
 /* ── RESPONSIVE ──────────────────────────────── */
+/* ── RESPONSIVE ──────────────────────────────── */
 @media (max-width: 768px) {
   .portfolio-grid { grid-template-columns: repeat(2, 1fr); }
   #about { grid-template-columns: 1fr; }
   .about-photo { min-height: 50vh; }
   .page-header { padding: 36px 6vw 24px; }
   .project-title-bar, .project-body { padding-left: 6vw; padding-right: 6vw; }
+
+  /* Stack paragraphs on mobile */
+  .project-title-bar div[style*="grid-template-columns:1fr 1fr"],
+  .project-title-bar div[style*="grid-template-columns: 1fr 1fr"] {
+    grid-template-columns: 1fr !important;
+  }
+
+  .about-bio div[style*="grid-template-columns:1fr 1fr"],
+  .about-bio div[style*="grid-template-columns: 1fr 1fr"] {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Nav background image */
+  .nav-drawer {
+    background-image: url('../images/Nav-Image.png');
+    background-size: cover;
+    background-position: center;
+  }
+
+  /* Hide video on mobile, show static image instead */
+  #hero-video {
+    display: none;
+  }
+
+  #hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: url('images/moble-hero.jpg') center/cover no-repeat;
+    opacity: 0.45;
+  }
 }
 
 @media (max-width: 480px) {
