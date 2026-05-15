@@ -64,6 +64,9 @@ a { text-decoration: none; color: inherit; }
   inset: 0;
   z-index: 999;
   background: var(--blue);
+  background-image: url('/images/Nav-Image.png');
+  background-size: cover;
+  background-position: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -72,7 +75,6 @@ a { text-decoration: none; color: inherit; }
   transform: translateX(100%);
   transition: transform 0.45s cubic-bezier(0.77, 0, 0.18, 1);
 }
-
 .nav-drawer.open { transform: translateX(0); }
 
 .nav-drawer nav { display: flex; flex-direction: column; gap: 8px; }
@@ -727,7 +729,8 @@ a { text-decoration: none; color: inherit; }
   #hero-video {
     display: none;
   }
-#hero::before {
+
+  #hero::before {
     content: '';
     position: absolute;
     inset: 0;
