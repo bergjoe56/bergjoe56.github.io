@@ -717,13 +717,13 @@ a { text-decoration: none; color: inherit; }
 
   /* Nav background image */
 .nav-drawer {
-    background-image: url('images/Nav-Image.png');
+    background-image: url('../images/Nav-Image.png');
     background-size: cover;
     background-position: center;
   }
   }
 
-  /* Hide video on mobile, show static image instead */
+/* Hide video on mobile, show static image instead */
   #hero-video {
     display: none;
   }
@@ -732,7 +732,7 @@ a { text-decoration: none; color: inherit; }
     content: '';
     position: absolute;
     inset: 0;
-   background: url('images/paris/paris-15.jpg') center/cover no-repeat;
+    background: url('../images/paris/paris-15.jpg') center/cover no-repeat;
     opacity: 0.45;
   }
 }
