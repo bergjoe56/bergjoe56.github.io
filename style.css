@@ -716,10 +716,11 @@ a { text-decoration: none; color: inherit; }
   }
 
   /* Nav background image */
-  .nav-drawer {
-    background-image: url('../images/Nav-Image.png');
+.nav-drawer {
+    background-image: url('images/Nav-Image.png');
     background-size: cover;
     background-position: center;
+  }
   }
 
   /* Hide video on mobile, show static image instead */
