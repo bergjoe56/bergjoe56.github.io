@@ -731,7 +731,7 @@ a { text-decoration: none; color: inherit; }
     content: '';
     position: absolute;
     inset: 0;
-    background: url('images/moble-hero.jpg') center/cover no-repeat;
+   background: url('images/paris/paris-15.jpg') center/cover no-repeat;
     opacity: 0.45;
   }
 }
