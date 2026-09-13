@@ -723,7 +723,6 @@ a { text-decoration: none; color: inherit; }
     background-size: cover;
     background-position: center;
   }
-  }
 
 /* Hide video on mobile, show static image instead */
   #hero-video {
